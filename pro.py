@@ -13,4 +13,4 @@ async def send_welcome(message: types.Message):
     kb.add("🎮 Boshlash", "ℹ️ Yordam")
     await message.answer("Salom! 🧠 Mini viktorinaga xush kelibsiz.", reply_markup=kb)
 
-
+print("hello world")
