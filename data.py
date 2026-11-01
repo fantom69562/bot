@@ -32,11 +32,11 @@ CATEGORIES = {
 def narx(son: int) -> str:
     """32000 -> '32 000 so'm'"""
     return f"{son:,}".replace(",", " ") + " so'm"
-#
-#
-# def mahsulot_top(mahsulot_id: int) -> dict | None:
-#     for kategoriya in CATEGORIES.values():
-#         for m in kategoriya["mahsulotlar"]:
-#             if m["id"] == mahsulot_id:
-#                 return m
-#     return None
+
+
+def mahsulot_top(mahsulot_id: int) -> dict | None:
+    for kategoriya in CATEGORIES.values():
+        for m in kategoriya["mahsulotlar"]:
+            if m["id"] == mahsulot_id:
+                return m
+    return None
